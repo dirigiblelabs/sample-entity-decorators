@@ -1,0 +1,15 @@
+{
+    "files": [
+        {
+            "table": "SAMPLE_COUNTRY",
+            "schema": "PUBLIC",
+            "file": "/sample-entity-decorators/data/countries.csv",
+            "header": true,
+            "useHeaderNames": true,
+            "delimField": ",",
+            "delimEnclosing": "\"",
+            "distinguishEmptyFromNull": true,
+            "version": "1.1"
+        }
+    ]
+}
