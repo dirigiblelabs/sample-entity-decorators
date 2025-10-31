@@ -16,8 +16,7 @@ class CountryController {
         try {
             const options: Options = {
                 limit: ctx.queryParameters["$limit"] ? parseInt(ctx.queryParameters["$limit"]) : 20,
-                offset: ctx.queryParameters["$offset"] ? parseInt(ctx.queryParameters["$offset"]) : 0,
-                language: request.getLocale().slice(0, 2)
+                offset: ctx.queryParameters["$offset"] ? parseInt(ctx.queryParameters["$offset"]) : 0
             };
 
             return this.repository.findAll(options);
