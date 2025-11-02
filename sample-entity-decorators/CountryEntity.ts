@@ -26,4 +26,5 @@ export class CountryEntity {
 
 }
 
+
 (new CountryEntity());

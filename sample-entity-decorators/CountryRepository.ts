@@ -1,7 +1,8 @@
-import { producer } from "sdk/messaging";
 import { CountryEntity } from "./CountryEntity";
 import { Repository, EntityConstructor } from "sdk/db";
+import { Component } from "sdk/component";
 
+@Component('CountryRepository')
 export class CountryRepository extends Repository<CountryEntity> {
 
     constructor() {
@@ -9,3 +10,5 @@ export class CountryRepository extends Repository<CountryEntity> {
     }
 
 }
+
+CountryRepository;

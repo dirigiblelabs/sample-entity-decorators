@@ -1,14 +1,18 @@
-import { Controller, Get, Documentation, request } from "sdk/http"
+import { Controller, Get, Documentation } from "sdk/http"
 import { HttpUtils } from "sdk/http/utils";
 import { Options } from "sdk/db";
+import { Injected, Inject } from "sdk/component";
 import { CountryEntity } from "./CountryEntity";
 import { CountryRepository } from "./CountryRepository";
 
 @Controller
 @Documentation("Sample Country Controller")
+@Injected()
 class CountryController {
 
-    private readonly repository = new CountryRepository();
+    @Inject('CountryRepository')
+    private readonly repository!: CountryRepository;
+
 
     @Get("/")
     @Documentation("Sample Get All Countries")
