@@ -25,6 +25,3 @@ export class CountryEntity {
     public Numeric?: string;
 
 }
-
-
-(new CountryEntity());

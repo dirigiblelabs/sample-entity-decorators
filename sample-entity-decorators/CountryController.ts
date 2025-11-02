@@ -13,7 +13,6 @@ class CountryController {
     @Inject('CountryRepository')
     private readonly repository!: CountryRepository;
 
-
     @Get("/")
     @Documentation("Sample Get All Countries")
     public getAll(_: CountryEntity, ctx: any): CountryEntity[] {
